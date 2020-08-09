@@ -9,7 +9,7 @@ import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 public class MainHook implements IXposedHookLoadPackage {
-    private static final String HOOKAPP = "com.tencent.mm";
+    private static final String HOOKAPP = BuildConfig.APPLICATION_ID; //"com.tencent.mm"
     private static final String TAG = "MainHook";   //logt + Tab
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {
