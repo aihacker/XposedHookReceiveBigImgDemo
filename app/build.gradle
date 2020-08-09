@@ -32,8 +32,8 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    compileOnly 'de.robv.android.xposed:api:82'
-    compileOnly 'de.robv.android.xposed:api:82:sources'
+//    compileOnly 'de.robv.android.xposed:api:82'
+//    compileOnly 'de.robv.android.xposed:api:82:sources'
     compileOnly files('lib/api-82.jar')
     compileOnly files('lib/api-82-sources.jar')
 }
