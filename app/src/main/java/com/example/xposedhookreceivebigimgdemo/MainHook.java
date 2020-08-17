@@ -58,28 +58,6 @@ public class MainHook implements IXposedHookLoadPackage {
         Sendcontext = context;
         classLoader = classLoader1;
 
-
-/*        new LauncherUI(classLoader1);
-        //new HCEService(classLoader1);
-        new ProcessService(context, classLoader1);
-        //new CoreService(classLoader1);
-
-        new HookSnsTimeLineUI(classLoader1);
-        new HookRecvMessage(classLoader1);
-        new HookSnsMessage(classLoader1);
-        new HookIMSend(classLoader1);
-        new Redenvelopes(classLoader1);
-        new DBHook(classLoader1);
-
-        new ChatroomInfoUI(classLoader1);
-        new SelectContactUI(classLoader1);
-        new RoomCardUI(classLoader1);
-        new ModRemarkRoomNameUI(classLoader1);
-        new ContactInfoUI(classLoader1);
-        //hook();
-        //     new IntentWework(classLoader1);
-        // new Latino(classLoader1);
-        //  new WxLog(classLoader1);*/
         new OpenWxLog(classLoader1);
         new CloseXposedCheck(classLoader1);
         new DBHook(classLoader1);
