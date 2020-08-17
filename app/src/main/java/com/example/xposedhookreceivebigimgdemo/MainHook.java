@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 
+import com.example.xposedhookreceivebigimgdemo.hook.CloseXposedCheck;
 import com.example.xposedhookreceivebigimgdemo.hook.OpenWxLog;
 import com.example.xposedhookreceivebigimgdemo.utils.Tool;
 
@@ -79,6 +80,7 @@ public class MainHook implements IXposedHookLoadPackage {
         // new Latino(classLoader1);
         //  new WxLog(classLoader1);*/
         new OpenWxLog(classLoader1);
+        new CloseXposedCheck(classLoader1);
     }
 
 
