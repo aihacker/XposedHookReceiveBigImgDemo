@@ -42,20 +42,6 @@ public class DBHook {
                             Log.i(TAG ,"\t参数[" + i +"]: "+ JsonUtil.tojson(param.args[i]));
                         }
                         Log.i(TAG ,"=================================================================================\n");
-//                        deaLInsertDB(param);
-                        ContentValues contentValues = (ContentValues) param.args[2];
-                        String p1 = param.args[1].toString();
-                        Log.i(TAG ,"hacker -> 进入if前");
-                        if ("WxFileIndex2".equals(tableName) && p1 == "rowid") {
-                            Log.i(TAG ,"hacker -> 进入if了");
-                            int msgType = contentValues.getAsInteger("msgType");
-                            Log.i(TAG ,"hacker -> msgType="+msgType);
-                            String talker = contentValues.getAsString("username");
-                            Log.i(TAG ,"hacker -> talker="+talker);
-                            long msgId_WxFileIndex2 = contentValues.getAsLong("msgId");
-                            Log.i(TAG ,"hacker -> msgId_WxFileIndex2="+ msgId_WxFileIndex2);
-                            String sqlStr = "select * from message where msgId = " + msgId_WxFileIndex2;
-                        }
                     }
 
                     @Override
