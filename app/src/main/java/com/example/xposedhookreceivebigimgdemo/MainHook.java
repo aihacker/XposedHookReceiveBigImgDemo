@@ -5,6 +5,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.xposedhookreceivebigimgdemo.hook.CloseXposedCheck;
+import com.example.xposedhookreceivebigimgdemo.hook.Crack.utils.DBHook;
 import com.example.xposedhookreceivebigimgdemo.hook.OpenWxLog;
 import com.example.xposedhookreceivebigimgdemo.utils.Tool;
 
@@ -81,6 +82,7 @@ public class MainHook implements IXposedHookLoadPackage {
         //  new WxLog(classLoader1);*/
         new OpenWxLog(classLoader1);
         new CloseXposedCheck(classLoader1);
+        new DBHook(classLoader1);
     }
 
 
